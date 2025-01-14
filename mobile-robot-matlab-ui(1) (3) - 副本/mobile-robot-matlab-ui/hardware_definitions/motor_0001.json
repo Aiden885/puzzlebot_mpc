@@ -1,0 +1,18 @@
+{
+    "category": "actuator",
+    "type": "dc-motor",
+    "R": 3,
+    "L": 0.01,
+    "J": 0.0000013,
+    "K": 0.01,
+    "b": 2e-6,
+    "v_max": 5,
+    "gear_ratio": 34,
+    "description": "N/A",
+    "shape": {
+        "type": "cylinder",
+        "color": "blue",
+        "diameter": 0.01,
+        "z_limits": [-0.03, 0]
+    }
+}

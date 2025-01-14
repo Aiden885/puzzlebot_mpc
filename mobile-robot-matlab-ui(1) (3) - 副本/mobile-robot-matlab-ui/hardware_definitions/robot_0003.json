@@ -1,0 +1,110 @@
+{
+    "category": "mobile_robot",
+    "mass": 0.5,
+    "label": "chassis",
+    "description": "DDR with Sonar on servo",
+    "shape": {
+        "type": "cylinder",
+        "color": "red",
+        "diameter": 0.26,
+        "z_limits": [-0.0025, 0.0025]
+    },
+    "transformation": [
+        [1, 0, 0, -1],
+        [0, 1, 0, -1], 
+        [0, 0, 1, 0], 
+        [0, 0, 0, 1]
+    ],
+    "components": [
+        {
+            "file_name": "motor_0001.json",
+            "label": "right motor",
+            "parent_label": "chassis",
+            "rotation_convension": "lhr",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 0, -1, -0.075],
+                [0, 1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0001.json",
+            "label": "left motor",
+            "parent_label": "chassis",
+            "rotation_convension": "rhr",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 0, 1, 0.075],
+                [0, -1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0001.json",
+            "label": "right wheel",
+            "parent_label": "right motor",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0001.json",
+            "label": "left wheel",
+            "parent_label": "left motor",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "encoder_0001.json",
+            "label": "right encoder",
+            "parent_label": "right motor",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "encoder_0001.json",
+            "label": "left encoder",
+            "parent_label": "left motor",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0002.json",
+            "label": "servo",
+            "parent_label": "chassis",
+            "transformation": [
+                [1, 0, 0, 0.1],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0.06],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "sonar_0001.json",
+            "label": "range",
+            "parent_label": "servo",
+            "transformation": [
+                [0, 0, 1, 0],
+                [0, 1, 0, 0.05],
+                [-1, 0, 0, 0.07],
+                [0, 0, 0, 1]
+            ]
+        }
+     ]
+}

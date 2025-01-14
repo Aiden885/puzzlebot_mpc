@@ -1,0 +1,14 @@
+{
+    "category": "world",
+    "dimension": 2,
+    "description": "N/A",
+    "color": "black",
+    "shapes": [
+        {
+            "type": "polygon",
+            "color": "black",
+            "x_points": [2,   4,    4,    2],
+            "y_points": [4,   4,   -4,   -4]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "category": "sensor",
+    "subcategory": "exteroceptive",
+    "type": "lidar-2d",
+    "max_range": 5.6,
+    "range_standard_deviation": 0.01,
+    "angle_unit": "degree",
+    "angle_span": 240,
+    "angle_resolution": 0.3519,
+    "description": "Hokuyo URG-04LX-UG01",
+    "shape": {
+        "type": "box",
+        "color": "black",
+        "x_limits": [-0.025, 0.025],
+        "y_limits": [-0.025, 0.025],
+        "z_limits": [-0.07, 0]
+    }
+}

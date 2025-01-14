@@ -1,0 +1,17 @@
+{
+    "category": "sensor",
+    "subcategory": "exteroceptive",
+    "type": "reflectance",
+    "num_units": 16,
+    "min_value": 400,
+    "max_value": 2000,
+    "interference_kernel_size": 5,
+    "description": "N/A",
+    "shape": {
+        "type": "box",
+        "color": "black",
+        "x_limits": [-0.06, 0.06],
+        "y_limits": [-0.0075, 0.0075],
+        "z_limits": [-0.001, 0.001]
+    }
+}

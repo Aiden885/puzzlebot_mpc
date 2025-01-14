@@ -1,0 +1,54 @@
+{
+    "category": "mobile_robot",
+    "mass": 0.5,
+    "label": "chassis",
+    "description": "DC motor with encoder and wheel for system ID",
+    "shape": {
+        "type": "cylinder",
+        "color": "red",
+        "diameter": 0.26,
+        "z_limits": [-0.0025, 0.0025]
+    },
+    "transformation": [
+        [1, 0, 0, -1],
+        [0, 1, 0, -1], 
+        [0, 0, 1, 0], 
+        [0, 0, 0, 1]
+    ],
+    "components": [
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor",
+            "parent_label": "chassis",
+            "rotation_convension": "rhr",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 0, -1, -0.075],
+                [0, 1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0001.json",
+            "label": "wheel",
+            "parent_label": "motor",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "encoder_0001.json",
+            "label": "encoder",
+            "parent_label": "motor",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        }
+     ]
+}

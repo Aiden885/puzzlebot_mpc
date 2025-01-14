@@ -1,0 +1,16 @@
+{
+    "category": "sensor",
+    "subcategory": "exteroceptive",
+    "type": "sonar",
+    "max_range": 2,
+    "range_standard_deviation": 0.01,
+    "angle_unit": "degree",
+    "angle_span": 30,
+    "description": "N/A",
+    "shape": {
+        "type": "cylinder",
+        "color": "black",
+        "diameter": 0.03,
+        "z_limits": [-0.03, 0]
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "category": "mobile_robot",
+    "mass": 0.5,
+    "label": "chassis",
+    "description": "Holonomic Robot with 4 swedish wheels",
+    "shape": {
+        "type": "cylinder",
+        "color": "red",
+        "diameter": 0.26,
+        "z_limits": [-0.0025, 0.0025]
+    },
+    "transformation": [
+        [1, 0, 0, 0],
+        [0, 1, 0, 0], 
+        [0, 0, 1, 0], 
+        [0, 0, 0, 1]
+    ],
+    "components": [
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 1",
+            "parent_label": "chassis",
+            "rotation_convension": "lhr",
+            "transformation": [
+                [1, 0, 0, -0.1],
+                [0, 0, -1, -0.075],
+                [0, 1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 2",
+            "parent_label": "chassis",
+            "rotation_convension": "lhr",
+            "transformation": [
+                [1, 0, 0, 0.1],
+                [0, 0, -1, -0.075],
+                [0, 1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 3",
+            "parent_label": "chassis",
+            "rotation_convension": "rhr",
+            "transformation": [
+                [1, 0, 0, 0.1],
+                [0, 0, 1, 0.075],
+                [0, -1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 4",
+            "parent_label": "chassis",
+            "rotation_convension": "rhr",
+            "transformation": [
+                [1, 0, 0, -0.1],
+                [0, 0, 1, 0.075],
+                [0, -1, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0003.json",
+            "label": "wheel 1",
+            "parent_label": "motor 1",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0004.json",
+            "label": "wheel 2",
+            "parent_label": "motor 2",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0003.json",
+            "label": "wheel 3",
+            "parent_label": "motor 3",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0004.json",
+            "label": "wheel 4",
+            "parent_label": "motor 4",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        }
+     ]
+}

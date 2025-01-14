@@ -1,0 +1,33 @@
+{
+    "category": "world",
+    "dimension": 2,
+    "description": "N/A",
+    "color": "black",
+    "shapes": [
+        {
+            "type": "point",
+            "coordinates": [3.6, -2],
+            "color": "yellow"
+        },
+        {
+            "type": "point",
+            "coordinates": [3, -1]
+        },
+        {
+            "type": "circle",
+            "diameter": 1,
+            "center": [0, 3],
+            "color": "yellow"
+        },
+        {
+            "type": "circle",
+            "diameter": 2,
+            "center": [-3, 3]
+        },
+        {
+            "type": "polygon",
+            "x_points": [1, 4, 3],
+            "y_points": [2, 1, 4]
+        }
+    ]
+}

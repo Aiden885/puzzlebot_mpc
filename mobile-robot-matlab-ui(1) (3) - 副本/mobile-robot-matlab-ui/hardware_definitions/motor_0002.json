@@ -1,0 +1,13 @@
+{
+    "category": "actuator",
+    "type": "servo-motor",
+    "angle_unit": "degree",
+    "angle_limits": [-60, 60],
+    "description": "N/A",
+    "shape": {
+        "type": "cylinder",
+        "color": "black",
+        "diameter": 0.06,
+        "z_limits": [-0.06, 0]
+    }
+}

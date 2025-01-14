@@ -1,0 +1,12 @@
+{
+    "category": "sensor",
+    "subcategory": "proprioceptive",
+    "type": "encoder",
+    "description": "N/A",
+    "shape": {
+        "type": "cylinder",
+        "color": "yellow",
+        "diameter": 0.008,
+        "z_limits": [-0.01, 0]
+    }
+}

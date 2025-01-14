@@ -1,0 +1,13 @@
+{
+    "category": "wheel",
+    "type": "swedish",
+    "gamma": 45,
+    "angle_unit": "degree",
+    "description": "N/A",
+    "shape": {
+        "type": "cylinder",
+        "color": "green",
+        "diameter": 0.088,
+        "z_limits": [-0.003, 0.003]
+    }
+}

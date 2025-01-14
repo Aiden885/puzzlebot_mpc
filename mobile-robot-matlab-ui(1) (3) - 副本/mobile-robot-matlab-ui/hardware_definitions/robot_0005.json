@@ -1,0 +1,87 @@
+{
+    "category": "mobile_robot",
+    "mass": 0.5,
+    "label": "chassis",
+    "description": "Holonomic Robot with 2 omnidirectional wheels",
+    "wheel_error_constant": 1e-2,
+    "shape": {
+        "type": "cylinder",
+        "color": "red",
+        "diameter": 0.26,
+        "z_limits": [-0.0025, 0.0025]
+    },
+    "transformation": [
+        [1, 0, 0, 0],
+        [0, 1, 0, 0], 
+        [0, 0, 1, 0], 
+        [0, 0, 0, 1]
+    ],
+    "components": [
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 1",
+            "parent_label": "chassis",
+            "transformation": [
+                [0, -0.866, 0.5, 0.05],
+                [0, 0.5, 0.866, 0.0866],
+                [-1, 0, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 2",
+            "parent_label": "chassis",
+            "transformation": [
+                [0, 0, -1, -0.1],
+                [0, 1, 0, 0],
+                [1, 0, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "motor_0001.json",
+            "label": "motor 3",
+            "parent_label": "chassis",
+            "transformation": [
+                [0, 0.866, 0.5, 0.05],
+                [0, 0.5, -0.866, -0.0866],
+                [-1, 0, 0, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0002.json",
+            "label": "wheel 1",
+            "parent_label": "motor 1",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0002.json",
+            "label": "wheel 2",
+            "parent_label": "motor 2",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        },
+        {
+            "file_name": "wheel_0002.json",
+            "label": "wheel 3",
+            "parent_label": "motor 3",
+            "transformation": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 0],
+                [0, 0, 1, 0],
+                [0, 0, 0, 1]
+            ]
+        }
+     ]
+}

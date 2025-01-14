@@ -1,0 +1,11 @@
+{
+    "category": "wheel",
+    "type": "standard",
+    "description": "N/A",
+    "shape": {
+        "type": "cylinder",
+        "color": "green",
+        "diameter": 0.095,
+        "z_limits": [-0.003, 0.003]
+    }
+}

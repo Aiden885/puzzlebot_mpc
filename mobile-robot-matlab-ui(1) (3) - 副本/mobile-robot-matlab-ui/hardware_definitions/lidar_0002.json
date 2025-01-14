@@ -1,0 +1,18 @@
+{
+    "category": "sensor",
+    "subcategory": "exteroceptive",
+    "type": "lidar-2d",
+    "max_range": 5,
+    "range_standard_deviation": 0.01,
+    "angle_unit": "degree",
+    "angle_span": 360,
+    "angle_resolution": 1,
+    "description": "RPLIDAR",
+    "shape": {
+        "type": "box",
+        "color": "black",
+        "x_limits": [-0.035, 0.035],
+        "y_limits": [-0.035, 0.035],
+        "z_limits": [-0.045, 0]
+    }
+}
